@@ -14,7 +14,7 @@ class Category extends StatelessWidget {
       child: Container(
         alignment: Alignment.centerLeft,
         color: color,
-        height: 50,
+        height: 80,
         width: double.infinity,
         padding: EdgeInsets.only(left: 20),
         child: Text(

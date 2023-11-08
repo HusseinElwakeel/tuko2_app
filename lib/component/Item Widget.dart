@@ -9,7 +9,7 @@ class item extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 110,
       color: Color(0xfff19031),
       child: Row(
         children: [
@@ -24,15 +24,23 @@ class item extends StatelessWidget {
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 number.JPNumber,
-                style: TextStyle(color: Colors.white, fontSize: 25),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 45,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              SizedBox(
+                height: 5,
               ),
               Text(
                 number.enNumber,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 20,
                   color: Colors.white,
                 ),
               ),
@@ -41,13 +49,16 @@ class item extends StatelessWidget {
           Spacer(
             flex: 1,
           ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Icon(
+          IconButton(
+            splashColor: Colors.black,
+            onPressed: () {
+              //play sound here
+            },
+            icon: Icon(
               Icons.play_arrow,
               color: Colors.white,
             ),
-          )
+          ),
         ],
       ),
     );
