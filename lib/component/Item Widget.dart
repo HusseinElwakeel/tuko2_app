@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:tuko_app/models/Number.dart';
 
@@ -51,8 +52,13 @@ class item extends StatelessWidget {
           ),
           IconButton(
             splashColor: Colors.black,
-            onPressed: () {
+            onPressed: () async {
               //play sound here
+              final player = AudioPlayer();
+              await player.setSource(
+                  AssetSource("sounds/numbers/number_one_sound.mp3"));
+              await player
+                  .play(AssetSource("sounds/numbers/number_one_sound.mp3"));
             },
             icon: Icon(
               Icons.play_arrow,
