@@ -1,13 +1,11 @@
-
-
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
+  Category({required this.text, required this.color, required this.onTap});
 
-  Category({required this.text, required this.color,required this.onTap});
-  late String text;
-  late Color color;
-  Function() onTap;
+  late final String text;
+  late final Color color;
+  final Function() onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +26,5 @@ class Category extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }
