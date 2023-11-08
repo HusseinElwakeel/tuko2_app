@@ -29,29 +29,17 @@ class Numbers extends StatelessWidget {
           backgroundColor: Color(0xff412e28),
           title: Text("Numbers"),
         ),
-        body:
-        ListView(
-          children: [
-            item(number: numbers[0]),
-            item(number: numbers[1]),
-            item(number: numbers[2]),
-            item(number: numbers[3]),
-            item(number: numbers[4]),
-            item(number: numbers[5]),
-            item(number: numbers[6]),
-            item(number: numbers[7]),
-            item(number: numbers[8]),
-            item(number: numbers[9]),
-
-          ],
-        )
-
-
-
-
-    );
+        body: ListView(
+          children: getList(numbers),
+        ));
   }
 }
-//write  class + name of the class {
-// البيانات الى بتمثل ال class ده
-// }
+
+// list return list of item and (it's input)
+List<item> getList(List<Number> numbers) {
+  List<item> listItem = [];
+  for (int i = 0; i < numbers.length; i++) {
+    listItem.add(item(number: numbers[i]));
+  }
+  return listItem;
+}
