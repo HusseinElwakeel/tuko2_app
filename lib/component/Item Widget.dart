@@ -55,10 +55,9 @@ class item extends StatelessWidget {
             onPressed: () async {
               //play sound here
               final player = AudioPlayer();
-              await player.setSource(
-                  AssetSource("sounds/numbers/number_one_sound.mp3"));
-              await player
-                  .play(AssetSource("sounds/numbers/number_one_sound.mp3"));
+              //to set audio
+              //await player.setSource(AssetSource("sounds/numbers/number_one_sound.mp3"));
+              await player.play(AssetSource(number.sound));
             },
             icon: Icon(
               Icons.play_arrow,

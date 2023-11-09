@@ -9,43 +9,53 @@ class Numbers extends StatelessWidget {
     Number(
         image: "assets/images/numbers/number_one.png",
         enNumber: "One",
-        JPNumber: "ichi"),
+        JPNumber: "ichi",
+        sound: "sounds/numbers/number_one_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_two.png",
         enNumber: "Two",
-        JPNumber: "Ni"),
+        JPNumber: "Ni",
+        sound: "sounds/numbers/number_two_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_three.png",
         enNumber: "Three",
-        JPNumber: "San"),
+        JPNumber: "San",
+        sound: "sounds/numbers/number_three_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_four.png",
         enNumber: "Four",
-        JPNumber: "Shi"),
+        JPNumber: "Shi",
+        sound: "sounds/numbers/number_four_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_five.png",
         enNumber: "Five",
-        JPNumber: "Go"),
+        JPNumber: "Go",
+        sound: "sounds/numbers/number_five_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_six.png",
         enNumber: "Six",
-        JPNumber: "Roku"),
+        JPNumber: "Roku",
+        sound: "sounds/numbers/number_six_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_seven.png",
         enNumber: "Seven",
-        JPNumber: "Sebun"),
+        JPNumber: "Sebun",
+        sound: "sounds/numbers/number_seven_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_eight.png",
         enNumber: "Eight",
-        JPNumber: "Hachi"),
+        JPNumber: "Hachi",
+        sound: "sounds/numbers/number_eight_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_nine.png",
         enNumber: "Nine",
-        JPNumber: "Kyū"),
+        JPNumber: "Kyū",
+        sound: "sounds/numbers/number_nine_sound.mp3"),
     Number(
         image: "assets/images/numbers/number_ten.png",
         enNumber: "Ten",
-        JPNumber: "Jū"),
+        JPNumber: "Jū",
+        sound: "sounds/numbers/number_ten_sound.mp3"),
   ];
 
   // final Number One = const Number(
