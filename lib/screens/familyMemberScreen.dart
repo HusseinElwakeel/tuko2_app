@@ -7,53 +7,53 @@ class FamilyMemberScreen extends StatelessWidget {
 
   final List<FamilyMemberModel> family = [
     FamilyMemberModel(
-        enName: "father",
-        jpName: "jpName",
-        image: "assets/images/family_members/family_father.png",
-        sound: "sounds/family_members/father.wav"),
-    FamilyMemberModel(
-        enName: "mother",
-        jpName: "jpName",
-        image: "assets/images/family_members/family_mother.png",
-        sound: "sounds/family_members/mother.wav"),
-    FamilyMemberModel(
-        enName: "daughter",
-        jpName: "jpName",
-        image: "assets/images/family_members/family_daughter.png",
-        sound: "sounds/family_members/daughter.wav"),
-    FamilyMemberModel(
-        enName: "grandfather",
-        jpName: "jpName",
+        enName: "Grandfather",
+        jpName: "Sofu",
         image: "assets/images/family_members/family_grandfather.png",
         sound: "sounds/family_members/grand father.wav"),
     FamilyMemberModel(
-        enName: "grandmother",
-        jpName: "jpName",
+        enName: "Grandmother",
+        jpName: "Sobo",
         image: "assets/images/family_members/family_grandmother.png",
         sound: "sounds/family_members/grand mother.wav"),
     FamilyMemberModel(
-        enName: "older_brother",
-        jpName: "jpName",
-        image: "assets/images/family_members/family_older_brother.png",
-        sound: "sounds/family_members/older bother.wav"),
+        enName: "Father",
+        jpName: "Chichioya",
+        image: "assets/images/family_members/family_father.png",
+        sound: "sounds/family_members/father.wav"),
     FamilyMemberModel(
-        enName: "older_sister",
-        jpName: "jpName",
+        enName: "Mother",
+        jpName: "Hahaoya",
+        image: "assets/images/family_members/family_mother.png",
+        sound: "sounds/family_members/mother.wav"),
+    FamilyMemberModel(
+        enName: "Older Brother",
+        jpName: "Ani",
+        image: "assets/images/family_members/family_older_brother.png",
+        sound: "sounds/family_members/older sister.wav"),
+    FamilyMemberModel(
+        enName: "Older Sister",
+        jpName: "Ane",
         image: "assets/images/family_members/family_older_sister.png",
         sound: "sounds/family_members/older sister.wav"),
     FamilyMemberModel(
-        enName: "son",
-        jpName: "jpName",
+        enName: "Son",
+        jpName: "Musuko",
         image: "assets/images/family_members/family_son.png",
         sound: "sounds/family_members/son.wav"),
     FamilyMemberModel(
-        enName: "younger_brother",
-        jpName: "jpName",
+        enName: "Daughter",
+        jpName: "Musume",
+        image: "assets/images/family_members/family_daughter.png",
+        sound: "sounds/family_members/daughter.wav"),
+    FamilyMemberModel(
+        enName: "Younger Brother",
+        jpName: "Otōto",
         image: "assets/images/family_members/family_younger_brother.png",
         sound: "sounds/family_members/younger brohter.wav"),
     FamilyMemberModel(
-        enName: "younger_sister",
-        jpName: "jpName",
+        enName: "Younger Sister",
+        jpName: "Imōto",
         image: "assets/images/family_members/family_younger_sister.png",
         sound: "sounds/family_members/younger sister.wav"),
   ];
