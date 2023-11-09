@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tuko_app/component/Category%20Widget.dart';
 import 'package:tuko_app/screens/NumbersScreen.dart';
+import 'package:tuko_app/screens/familyMemberScreen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -30,7 +31,15 @@ class HomeScreen extends StatelessWidget {
                     ));
               }),
           Category(
-              text: "Family Members", color: Color(0xff538036), onTap: () {}),
+              text: "Family Members",
+              color: Color(0xff538036),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return FamilyMemberScreen();
+                  },
+                ));
+              }),
           Category(
             text: "Colors",
             color: Color(0xff7d3fa2),
