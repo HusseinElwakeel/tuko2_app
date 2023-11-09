@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tuko_app/models/family_member_model.dart';
@@ -52,7 +53,10 @@ class FmailyMemberItem extends StatelessWidget {
             flex: 3,
           ),
           IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                final player = AudioPlayer();
+                await player.play(AssetSource(member.sound));
+              },
               icon: Icon(
                 Icons.play_arrow,
                 color: Colors.white,
