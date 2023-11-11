@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tuko_app/models/PhrasesModel.dart';
@@ -39,7 +40,12 @@ class PhrasesWidget extends StatelessWidget {
             flex: 1,
           ),
           IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                final player = AudioPlayer();
+                await player.play(AssetSource(
+                  phrases.Sound,
+                ));
+              },
               icon: Icon(
                 Icons.play_arrow,
                 color: Colors.white,
