@@ -32,7 +32,7 @@ class FmailyMemberItem extends StatelessWidget {
                   member.enName,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 32,
+                    fontSize: 45,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
@@ -42,7 +42,7 @@ class FmailyMemberItem extends StatelessWidget {
                 Text(
                   member.jpName,
                   style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 20,
                     color: Colors.white,
                   ),
                 ),
