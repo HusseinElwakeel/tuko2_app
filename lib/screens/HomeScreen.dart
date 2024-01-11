@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tuko_app/component/Category%20Widget.dart';
+import 'package:tuko_app/screens/ColorScreen.dart';
 import 'package:tuko_app/screens/NumbersScreen.dart';
 import 'package:tuko_app/screens/PhrasesScreen.dart';
 import 'package:tuko_app/screens/familyMemberScreen.dart';
@@ -44,7 +45,9 @@ class HomeScreen extends StatelessWidget {
           Category(
             text: "Colors",
             color: Color(0xff7d3fa2),
-            onTap: () {},
+            onTap: () {
+              getNav(context, ColorScreen());
+            },
           ),
           Category(
               text: "Phrases",
@@ -115,5 +118,13 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  void getNav(BuildContext context, Screen) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Screen,
+        ));
   }
 }

@@ -1,7 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tuko_app/models/family_member_model.dart';
+import 'package:tuko_app/models/Item Model.dart';
 
 class ItemWidget extends StatelessWidget {
   const ItemWidget({super.key, required this.member, required this.color});
