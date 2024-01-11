@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:tuko_app/models/PhrasesModel.dart';
 
 class PhrasesWidget extends StatelessWidget {
-  PhrasesWidget({super.key, required this.phrases});
+  const PhrasesWidget({super.key, required this.phrases});
 
   final PhrasesModel phrases;
 

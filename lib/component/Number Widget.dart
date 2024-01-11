@@ -1,11 +1,11 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:tuko_app/models/Number.dart';
+import 'package:tuko_app/models/NumberModel.dart';
 
 class NumberWidget extends StatelessWidget {
   const NumberWidget({super.key, required this.number});
 
-  final Number number;
+  final NumberModel number;
 
   @override
   Widget build(BuildContext context) {

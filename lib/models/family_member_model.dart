@@ -4,7 +4,7 @@ class ItemModel {
   final String image;
   final String sound;
 
-  ItemModel(
+  const ItemModel(
       {required this.enName,
       required this.jpName,
       required this.image,

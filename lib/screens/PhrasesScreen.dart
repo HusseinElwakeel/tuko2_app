@@ -3,9 +3,9 @@ import 'package:tuko_app/component/PhasesWidget.dart';
 import 'package:tuko_app/models/PhrasesModel.dart';
 
 class PhrasesScreen extends StatelessWidget {
-  PhrasesScreen({super.key});
+  const PhrasesScreen({super.key});
 
-  final List<PhrasesModel> phrasesSentences = [
+  final List<PhrasesModel> phrasesSentences = const [
     PhrasesModel(
         EnSentences: "are you coming?",
         JpSentences: "Kimasu ka",

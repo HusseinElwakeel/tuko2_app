@@ -3,9 +3,9 @@ import 'package:tuko_app/component/Family Member Widget.dart';
 import 'package:tuko_app/models/family_member_model.dart';
 
 class FamilyMemberScreen extends StatelessWidget {
-  FamilyMemberScreen({super.key});
+  const FamilyMemberScreen({super.key});
 
-  final List<ItemModel> family = [
+  final List<ItemModel> family = const [
     ItemModel(
         enName: "Sofu",
         jpName: "Grandfather",

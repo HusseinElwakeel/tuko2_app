@@ -3,7 +3,7 @@ class PhrasesModel {
   final String EnSentences;
   final String Sound;
 
-  PhrasesModel({
+  const PhrasesModel({
     required this.EnSentences,
     required this.JpSentences,
     required this.Sound,

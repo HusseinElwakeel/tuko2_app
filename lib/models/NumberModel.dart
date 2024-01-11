@@ -2,13 +2,13 @@
 // البيانات الى بتمثل ال class ده
 // }
 
-class Number {
+class NumberModel {
   final String image;
   final String enNumber;
   final String JPNumber;
   final String sound;
 
-  const Number(
+  const NumberModel(
       {required this.image,
       required this.enNumber,
       required this.JPNumber,
