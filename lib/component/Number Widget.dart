@@ -2,8 +2,8 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:tuko_app/models/Number.dart';
 
-class item extends StatelessWidget {
-  const item({super.key, required this.number});
+class NumberWidget extends StatelessWidget {
+  const NumberWidget({super.key, required this.number});
 
   final Number number;
 

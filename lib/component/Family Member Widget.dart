@@ -3,15 +3,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tuko_app/models/family_member_model.dart';
 
-class FmailyMemberItem extends StatelessWidget {
-  const FmailyMemberItem({super.key, required this.member});
+class ItemWidget extends StatelessWidget {
+  const ItemWidget({super.key, required this.member, required this.color});
 
-  final FamilyMemberModel member;
+  final ItemModel member;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xff538036),
+      color: color,
       child: Row(
         children: [
           Container(

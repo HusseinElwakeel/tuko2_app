@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tuko_app/component/Item%20Widget.dart';
+import 'package:tuko_app/component/Number%20Widget.dart';
 import 'package:tuko_app/models/Number.dart';
 
 class Numbers extends StatelessWidget {
@@ -73,7 +73,7 @@ class Numbers extends StatelessWidget {
         // length of the list of item
         itemCount: numbers.length,
         // it's the item what want to build
-        itemBuilder: (context, index) => item(number: numbers[index]),
+        itemBuilder: (context, index) => NumberWidget(number: numbers[index]),
       ),
     );
   }

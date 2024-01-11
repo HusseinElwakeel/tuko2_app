@@ -1,57 +1,57 @@
 import 'package:flutter/material.dart';
-import 'package:tuko_app/component/family_member_item.dart';
+import 'package:tuko_app/component/Family Member Widget.dart';
 import 'package:tuko_app/models/family_member_model.dart';
 
 class FamilyMemberScreen extends StatelessWidget {
   FamilyMemberScreen({super.key});
 
-  final List<FamilyMemberModel> family = [
-    FamilyMemberModel(
+  final List<ItemModel> family = [
+    ItemModel(
         enName: "Sofu",
         jpName: "Grandfather",
         image: "assets/images/family_members/family_grandfather.png",
         sound: "sounds/family_members/grand father.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Sobo",
         jpName: "Grandmother",
         image: "assets/images/family_members/family_grandmother.png",
         sound: "sounds/family_members/grand mother.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Chichioya",
         jpName: "Father",
         image: "assets/images/family_members/family_father.png",
         sound: "sounds/family_members/father.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Hahaoya",
         jpName: "Mother",
         image: "assets/images/family_members/family_mother.png",
         sound: "sounds/family_members/mother.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Ani",
         jpName: "Older Brother",
         image: "assets/images/family_members/family_older_brother.png",
         sound: "sounds/family_members/older sister.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Ane",
         jpName: "Older Sister",
         image: "assets/images/family_members/family_older_sister.png",
         sound: "sounds/family_members/older sister.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Musuko",
         jpName: "Son",
         image: "assets/images/family_members/family_son.png",
         sound: "sounds/family_members/son.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Musume",
         jpName: "Daughter",
         image: "assets/images/family_members/family_daughter.png",
         sound: "sounds/family_members/daughter.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Otōto",
         jpName: "Younger Brother",
         image: "assets/images/family_members/family_younger_brother.png",
         sound: "sounds/family_members/younger brohter.wav"),
-    FamilyMemberModel(
+    ItemModel(
         enName: "Imōto",
         jpName: "Younger Sister",
         image: "assets/images/family_members/family_younger_sister.png",
@@ -66,8 +66,9 @@ class FamilyMemberScreen extends StatelessWidget {
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
-          return FmailyMemberItem(
+          return ItemWidget(
             member: family[index],
+            color: Color(0xff538036),
           );
         },
         itemCount: family.length,
