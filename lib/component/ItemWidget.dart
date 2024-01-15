@@ -33,7 +33,7 @@ class ItemWidget extends StatelessWidget {
                   member.enName,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 45,
+                    fontSize: 30,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
@@ -54,9 +54,8 @@ class ItemWidget extends StatelessWidget {
             flex: 3,
           ),
           IconButton(
-              onPressed: () async {
-                final player = AudioPlayer();
-                await player.play(AssetSource(member.sound));
+              onPressed: () {
+                member.playSound();
               },
               icon: Icon(
                 Icons.play_arrow,

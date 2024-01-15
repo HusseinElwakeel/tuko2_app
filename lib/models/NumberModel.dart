@@ -1,6 +1,4 @@
-//write  class + name of the class {
-// البيانات الى بتمثل ال class ده
-// }
+import 'package:audioplayers/audioplayers.dart';
 
 class NumberModel {
   final String image;
@@ -13,4 +11,9 @@ class NumberModel {
       required this.enNumber,
       required this.JPNumber,
       required this.sound});
+
+  playSound() async {
+    final player = AudioPlayer();
+    await player.play(AssetSource(sound));
+  }
 }

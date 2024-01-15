@@ -31,7 +31,7 @@ class NumberWidget extends StatelessWidget {
                 number.JPNumber,
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 45,
+                  fontSize: 30,
                   fontWeight: FontWeight.w900,
                 ),
               ),
@@ -52,12 +52,8 @@ class NumberWidget extends StatelessWidget {
           ),
           IconButton(
             splashColor: Colors.black,
-            onPressed: () async {
-              //play sound here
-              final player = AudioPlayer();
-              //to set audio
-              //await player.setSource(AssetSource("sounds/numbers/number_one_sound.mp3"));
-              await player.play(AssetSource(number.sound));
+            onPressed: () {
+              number.playSound();
             },
             icon: Icon(
               Icons.play_arrow,

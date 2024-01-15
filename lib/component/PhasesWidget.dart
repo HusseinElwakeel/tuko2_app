@@ -44,11 +44,8 @@ class PhrasesWidget extends StatelessWidget {
               flex: 1,
             ),
             IconButton(
-                onPressed: () async {
-                  final player = AudioPlayer();
-                  await player.play(AssetSource(
-                    phrases.Sound,
-                  ));
+                onPressed: () {
+                  phrases.playSound();
                 },
                 icon: Icon(
                   Icons.play_arrow,
