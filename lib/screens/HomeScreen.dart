@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
           ),
           Category(
               text: "Phrases",
-              color: Color(0xff48a6cc),
+              color: Colors.redAccent,
               onTap: () {
                 Navigator.push(
                     context,

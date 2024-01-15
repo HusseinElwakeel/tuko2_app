@@ -19,11 +19,11 @@ class PhrasesScreen extends StatelessWidget {
         JpSentences: "Choushi wa dou desu ka ?",
         Sound: "sounds/phrases/how_are_you_feeling.wav"),
     PhrasesModel(
-        EnSentences: "I Love Anime",
+        EnSentences: "I love Anime",
         JpSentences: "Watashi wa anime ga daisuk desu",
         Sound: "sounds/phrases/i_love_anime.wav"),
     PhrasesModel(
-        EnSentences: "I Love Programming",
+        EnSentences: "I love Programming",
         JpSentences: "Programming ga daisuk",
         Sound: "sounds/phrases/i_love_programming.wav"),
     PhrasesModel(
@@ -41,7 +41,7 @@ class PhrasesScreen extends StatelessWidget {
     PhrasesModel(
         EnSentences: "Yes I'm coming.",
         JpSentences: "Hai, rai masu.",
-        Sound: "assets/sounds/phrases/yes_im_coming.wav")
+        Sound: "sounds/phrases/yes_im_coming.wav")
   ];
 
   @override
