@@ -12,7 +12,7 @@ class PhrasesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 88,
-      color: Colors.white,
+      color: Colors.redAccent,
       child: Row(
         children: [
           Padding(
@@ -25,7 +25,7 @@ class PhrasesWidget extends StatelessWidget {
                   phrases.JpSentences,
                   style: TextStyle(
                       fontSize: 17,
-                      color: Colors.redAccent,
+                      color: Colors.white,
                       fontWeight: FontWeight.w900),
                 ),
                 SizedBox(
@@ -33,7 +33,7 @@ class PhrasesWidget extends StatelessWidget {
                 ),
                 Text(
                   phrases.EnSentences,
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
               ],
             ),
@@ -47,7 +47,7 @@ class PhrasesWidget extends StatelessWidget {
               },
               icon: Icon(
                 Icons.play_arrow,
-                color: Colors.redAccent,
+                color: Colors.white,
               ))
         ],
       ),
